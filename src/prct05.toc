@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{\IeC {\textquestiondown }Por qu\IeC {\'e} Beamer?}{4}{0}{1}
+\beamer@sectionintoc {2}{F\IeC {\'o}rmulas Matem\IeC {\'a}ticas}{5}{0}{2}

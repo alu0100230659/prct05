@@ -1,0 +1,131 @@
+\documentclass{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\newtheorem{caracteristicas}{Características}
+
+\title[Beamer]{Creación de Diapositivas con Beamer}
+\author[Adrián Mendióroz]{Adrián R. Mendióroz Morales\\
+Técnicas Instrumentales\\
+Grado en Matemáticas\\
+Universidad de La Laguna}
+\date[15-03-2013]{15 de Marzo de 2013}
+
+\usetheme{Madrid}
+\usecolortheme[RGB={122,59,122}]{structure}
+
+\begin{document}
+
+\begin{frame}
+ 
+\titlepage
+ 
+\end{frame}
+
+\begin{frame}
+\frametitle{Índice}  
+\tableofcontents[pausesections]
+\end{frame}
+
+\section{¿Por qué Beamer?}
+
+\begin{frame}
+
+\frametitle{¿Por qué Beamer?}
+
+\begin{caracteristicas}
+
+Para la creación de Diapositivas usamos Beamer porque posee ventajas importantes como por
+ejemplo, que los comandos de \LaTeX también funcionan en Beamer, porque se crea un índice 
+automático con enlaces a cada sección y subsección, porque el formato de salida es usualmente
+PDF, el cual tiene una compatibilidad global, o porque (según veremos en la siguiente sección)
+permite un sencillo uso de fórmulas matemáticas.
+
+\end{caracteristicas}
+
+\end{frame}
+
+\section{Fórmulas Matemáticas}
+
+\begin{frame}
+
+\frametitle{Fórmulas Matemáticas}
+
+\begin{block}{Objetivo}
+ A continuación vamos a ver unos ejemplos de como se muestran las fórmulas matemáticas usando Beamer.
+ 
+\end{block}
+
+\begin{block}{Ejemplos}
+
+\begin{itemize}
+  \item
+  \begin{scriptsize}
+  \[ S_n=a_1 + a_2 + \cdots + a_n = \sum_{i=1}^n a_i \]
+  \end{scriptsize}
+  \pause
+
+  \item
+  \begin{scriptsize}
+  \[ \int_{x=0}^{x=1} x\text{e}^{x^2} \]
+  \end{scriptsize}
+  \pause
+
+  \item
+  \begin{scriptsize}
+  \[ y=\frac{x^2 + 3x + 1}{1 + x^2} \]
+  \end{scriptsize}
+  
+\end{itemize}
+
+\end{block}
+
+\end{frame}
+ 
+ \begin{frame}
+
+\frametitle{Fórmulas Matemáticas}
+
+\begin{block}{Ejemplos}
+
+\begin{itemize}
+
+  \item
+  \begin{scriptsize}
+  \[ lim_{x\to\infty} \left(x + \frac{1}{x} \right) \]
+  \end{scriptsize}
+  \pause
+  
+  \item
+  \begin{scriptsize}
+  \[ x + y^{2n + 2} = \sqrt{b^2 - 4ac} \]
+  \end{scriptsize}
+
+  
+\end{itemize}
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Bibliografía}
+
+\begin{thebibliography}{10}
+
+\beamertemplatebookbibitems
+\bibitem{Beamer}Beamer - Presentaciones en LaTeX
+ {\tiny $http://www.dsi.uclm.es/personal/AnaMariaMartinez/webcurso/curso_archivos/LaTeX/8Beamer.pdf$}
+
+\beamertemplatebookbibitems
+\bibitem{Formulas}Creación eficiente de documentos con LaTeX
+ {\small $http://www.alumnos.inf.utfsm.cl/~mmora/documents/presentacion-latex.pdf$}
+
+\end{thebibliography}
+
+\end{frame}
+
+
+\end{document}
